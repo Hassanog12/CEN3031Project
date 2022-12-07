@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff63;
+}
+ /* Logo( Gator Sublease CSS */
+.logo{
+    width: 150px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10% 20px;
+    position: relative;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/LoginBackground.jpeg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    background-position-y: 86px;
+}
